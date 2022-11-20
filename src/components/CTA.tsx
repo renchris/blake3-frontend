@@ -14,7 +14,7 @@ const CTA = (): JSX.Element => (
     <Button
       as={ChakraLink}
       isExternal
-      href="https://chakra-ui.com"
+      href="https://github.com/BLAKE3-team/BLAKE3"
       variant="outline"
       colorScheme="green"
       rounded="button"
@@ -22,12 +22,12 @@ const CTA = (): JSX.Element => (
       mx={2}
       width="full"
     >
-      chakra-ui
+      Rust & C Implementation
     </Button>
     <Button
       as={ChakraLink}
       isExternal
-      href="https://github.com/vercel/next.js/blob/canary/examples/with-chakra-ui-typescript"
+      href="https://github.com/renchris/blake3-web-app"
       variant="solid"
       colorScheme="green"
       rounded="button"
@@ -35,7 +35,7 @@ const CTA = (): JSX.Element => (
       mx={2}
       width="full"
     >
-      View Repo
+      Front End Github
     </Button>
   </Container>
 )

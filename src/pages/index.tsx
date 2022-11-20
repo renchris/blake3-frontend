@@ -5,6 +5,7 @@ import {
   List,
   ListIcon,
   ListItem,
+  Box,
 } from '@chakra-ui/react'
 import { CheckCircleIcon, LinkIcon } from '@chakra-ui/icons'
 
@@ -15,51 +16,14 @@ import DarkModeSwitch from '../components/DarkModeSwitch'
 import CTA from '../components/CTA'
 import Footer from '../components/Footer'
 import NavigationBar from '../components/NavigationBar'
+import Blake3 from '../components/Blake3'
 
 const Index = () => (
   <Container height="100vh">
-    <NavigationBar />
-    <Hero title="with-chakra-ui-typescript" />
-    <Main>
-      <Text color="text">
-        Example repository of
-        {' '}
-        <Code>Next.js</Code>
-        {' '}
-        +
-        <Code>chakra-ui</Code>
-        {' '}
-        +
-        {' '}
-        <Code>TypeScript</Code>
-        .
-      </Text>
-
-      <List spacing={3} my={0} color="text">
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="green.500" />
-          <ChakraLink
-            isExternal
-            href="https://chakra-ui.com"
-            flexGrow={1}
-            mr={2}
-          >
-            Chakra UI
-            <LinkIcon />
-          </ChakraLink>
-        </ListItem>
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="green.500" />
-          <ChakraLink isExternal href="https://nextjs.org" flexGrow={1} mr={2}>
-            Next.js
-            <LinkIcon />
-          </ChakraLink>
-        </ListItem>
-      </List>
-    </Main>
-    <Footer>
-      <Text>Next ❤️ Chakra</Text>
-    </Footer>
+    <Box mt="10vh">
+      <Hero title="Blake3" />
+      <Blake3 />
+    </Box>
     <CTA />
   </Container>
 )
